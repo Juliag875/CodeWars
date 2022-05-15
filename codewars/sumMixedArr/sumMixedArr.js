@@ -1,3 +1,4 @@
+//Solution 1
 function sumMix(arr) {
   let sum = 0
   arr.map((el) => {
@@ -6,6 +7,7 @@ function sumMix(arr) {
   return sum;
 }
 
+// Solution 2
 const sumMixedOneLine = (arr, sum = 0) => 
   arr.map(el => parseInt(el)).reduce((sum, el) => sum + el)
 
