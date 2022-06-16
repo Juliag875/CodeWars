@@ -16,7 +16,7 @@ function sameOne(arr1, arr2) {
 
 console.log(sameOne([1,2,3,2], [9,1,4,4]))
 
-// REFACTOR Linear time O(n)
+// REFACTOR Linear time O(n) - 3n --> n
 function sameTwo(arr1, arr2) {
   if(arr1.length !== arr2.length) {
     return false
@@ -33,7 +33,7 @@ function sameTwo(arr1, arr2) {
 
   console.log(freqCounter1)
   console.log(freqCounter2)
-  
+
   for (let key in freqCounter1) {
     if (!(key ** 2 in freqCounter2)) {
       return false
