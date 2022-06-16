@@ -1,3 +1,0 @@
-function frequencyCounter() {
-  let result = {}
-}
