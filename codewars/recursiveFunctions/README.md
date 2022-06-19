@@ -15,3 +15,9 @@ function outer(input){
   helper(input)
   return outerScopedVariable;
 }
+
+Pure Recursion
+Fn itself is self-contained and recursive
+For ARR use method like slice, the spread operator and concat that make copies of arr so you don't mutate them.
+For STR - str are immutable so you will need to use slice, substr or substring to make copies of strings.
+For OBJ - to make copies of obj use Object.assign or spresd operator

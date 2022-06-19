@@ -6,7 +6,7 @@ function collectOddValues(arr) {
       return;
     }
 
-    if (helperInput[0] % 2 === 0) {
+    if (helperInput[0] % 2 !== 0) {
       result.push(helperInput[0])
     }
 
