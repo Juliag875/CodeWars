@@ -3,7 +3,7 @@
 // Reverse Solution
 function reverse(str){
 	if(str.length <= 1) return str;
-	return reverse(str.slice(1) + str[0]);
+	return reverse(str.slice(1)) + str[0];
 }
 // reverse('awesome') // 'emosewa'
 // reverse('rithmschool') // 'loohcsmhtir'
@@ -15,8 +15,13 @@ function isPalindrome(str){
     if(str[0] === str.slice(-1)) return isPalindrome(str.slice(1,-1))
     return false;
 }
-//someRecursive Solution
+// isPalindrome('awesome') // false
+// isPalindrome('foobar') // false
+// isPalindrome('tacocat') // true
+// isPalindrome('amanaplanacanalpanama') // true
+// isPalindrome('amanaplanacanalpandemonium') // false
 
+//someRecursive Solution
 function someRecursive(array, callback) {
     if (array.length === 0) return false;
     if (callback(array[0])) return true;
